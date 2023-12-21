@@ -1,1 +1,1 @@
-# Better every day
+# trying to do better
