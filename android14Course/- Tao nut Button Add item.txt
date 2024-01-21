@@ -1,0 +1,17 @@
+- Dinh dang kieu du lieu se hien thi (cac thanh phan du lieu)
+- Tao cac bien trang thai
+- Tao nut Button Add item
+	+ kem bien showDialog
+- Xay dung hop thoai canh bao dialog, de nhap du lieu moi vao danh sach
+	+ Kem bien itemName, itemQuantity de chua noi dung sau khi nhap
+- Tao lazy column: 
+	+ Kem bien (sitem): de chua va hien thi danh sach cac muc
+- Tao ham hien thi danh sach (de hien thi trong lazy column): shoppingListItem
+	+ Ket hop bieu thuc lambda
+- Tao ham chinh sua phan tu trong danh sach
+	+ Ket hop bieu thuc lambda
+- Tao cach hien thi lazycolumn
+	+ Kiem tra tinh trang chinh sua
+	+ Neu dung thi mo trinh chinh sua
+	+ Neu sai thi hien thi danh sach
+
