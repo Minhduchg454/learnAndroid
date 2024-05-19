@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Business Card</string>
+    <string name="full_name_text">Nguyen Huu Duc</string>
+    <string name="title_text">Software Engineer</string>
+    <string name="number_phone_text">+84 589 378 927</string>
+    <string name="email_text">minhduchg454@gmail.com</string>
+    <string name="company_text">Freelance</string>
+</resources>

@@ -102,8 +102,7 @@ fun ShoppingListApp(){
                 .padding(16.dp) //tao khoang cach giua nut Title va cot luoi
             ){
                 items(listOf("Apple", "Banana", "Cherry")){
-                    item ->
-                    CustomCard (data = item)
+                    item -> CustomCard (data = item)
                 }
             }
 
@@ -506,7 +505,7 @@ fun ShoppingListItem(
 
 
 
- */
+
 
 
 /*Vi du: lazy column
