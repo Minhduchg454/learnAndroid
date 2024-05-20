@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Art Space</string>
+    <string name="previous_button">Previous</string>
+    <string name="next_button">Next</string>
+    <string name="title_art_one">The Prättigau-Valley</string>
+    <string name="artist_one">Damian Markutt</string>
+    <string name="title_art_two">The Wonders of Hawaii</string>
+    <string name="artist_two">Jeremy Bishop</string>
+    <string name="title_art_three">Mirror cave</string>
+    <string name="artist_three">Jorge Fernández</string>
+
+</resources>
