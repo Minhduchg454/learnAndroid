@@ -20,7 +20,9 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.layout.wrapContentWidth
+import androidx.compose.foundation.rememberScrollState
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.foundation.verticalScroll
 import androidx.compose.material3.Button
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -95,12 +97,8 @@ fun ArtSpaceApp() {
     Column (
         modifier = Modifier
             .fillMaxSize()
-            .padding(
-                start = 16.dp,
-                end = 16.dp,
-                top = 16.dp,
-                bottom = 16.dp
-            ),
+            .padding(16.dp)
+            .verticalScroll(rememberScrollState()),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.SpaceBetween
     ) {
@@ -109,7 +107,7 @@ fun ArtSpaceApp() {
         Box(
             modifier = Modifier
                 .size(500.dp)
-                .shadow(16.dp,  RoundedCornerShape(10.dp))
+                .shadow(16.dp, RoundedCornerShape(10.dp))
                 .background(
                     color = Color(0xffECEBF4),
                     shape = RoundedCornerShape(10.dp)
@@ -123,7 +121,6 @@ fun ArtSpaceApp() {
                     .padding(16.dp)
             )
         }
-
 
         ArtworkDesciptor(
             titleContent = titleContent,
@@ -148,7 +145,6 @@ fun ArtSpaceApp() {
         ){
             ButtonAction(
                 label = R.string.previous_button,
-                value = value,
                 onValueChange = previousValue,
                 modifier = Modifier.weight(1f)
             )
@@ -157,7 +153,6 @@ fun ArtSpaceApp() {
 
             ButtonAction(
                 label = R.string.next_button,
-                value = value,
                 onValueChange = nextValue,
                 modifier = Modifier.weight(1f)
                 )
@@ -172,7 +167,6 @@ fun ArtSpaceApp() {
 @Composable
 fun ButtonAction (
     @StringRes label: Int,
-    value: Int,
     onValueChange:()->Unit,
     modifier: Modifier = Modifier
 ){
@@ -194,7 +188,6 @@ fun ArtworkDesciptor(
     @StringRes titleContent: Int,
     @StringRes artistContent: Int,
     ){
-
     Column (
         modifier=modifier
     ){
@@ -217,7 +210,7 @@ fun ArtworkDesciptor(
     }
 }
 
-//fun ArtworkWall
+
 
 
 
