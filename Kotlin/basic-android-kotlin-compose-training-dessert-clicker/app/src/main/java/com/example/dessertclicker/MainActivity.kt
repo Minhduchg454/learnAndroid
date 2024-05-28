@@ -20,7 +20,6 @@ import android.content.ActivityNotFoundException
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -55,7 +54,7 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
-import androidx.compose.runtime.saveable.rememberSaveable
+import androidx.compose.runtime.remember
 import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
@@ -71,10 +70,11 @@ import androidx.core.content.ContextCompat
 import com.example.dessertclicker.data.Datasource
 import com.example.dessertclicker.model.Dessert
 import com.example.dessertclicker.ui.theme.DessertClickerTheme
+import android.util.Log
+import android.view.ActionMode
+import androidx.compose.runtime.saveable.rememberSaveable
 
-// Tag for logging
-private const val TAG = "MainActivity"
-
+private const val TAG = "MainActivity" //CONST hang so thoi gian bien dich
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         enableEdgeToEdge()
@@ -99,6 +99,7 @@ class MainActivity : ComponentActivity() {
         Log.d(TAG, "onStart Called")
     }
 
+
     override fun onResume() {
         super.onResume()
         Log.d(TAG, "onResume Called")
@@ -122,6 +123,10 @@ class MainActivity : ComponentActivity() {
     override fun onDestroy() {
         super.onDestroy()
         Log.d(TAG, "onDestroy Called")
+    }
+
+    override fun onWindowStartingActionMode(callback: ActionMode.Callback?): ActionMode? {
+        return super.onWindowStartingActionMode(callback)
     }
 }
 
