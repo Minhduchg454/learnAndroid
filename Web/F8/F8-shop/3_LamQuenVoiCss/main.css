@@ -1,0 +1,92 @@
+/* ki hieu * tat dung len tac ca cac the */
+*{
+    font-weight: bold;
+}
+
+
+h1{
+    color: blue;
+    font-size: 30 px;
+}
+
+/* Sau khi goi id trong the moi, dung # de goi id do va ap kieu
+    id la duy nhat va khong trung nhau
+*/
+#first-heading{
+    color: blue;
+}
+
+/* Dung dau cham de goi la */
+.second-heading{
+    color: green;
+    font-size: 20px;
+}
+
+/* Chi css cho the co ca hai class dong thoi */
+.second-heading.heading{
+    text-align: center;
+}
+
+/* class 2 con cua class 1 
+    bat cu lop nao .second-heading nam trong box (cha) thi bi tac dong
+    cu co dau cah thi ben phai la con cua ben trai
+*/
+
+.box .second-heading{
+    color: red;
+}
+
+
+
+
+/* tac dong len thuoc tinh trong the */
+h3.second-heading{
+    color: aqua;
+}
+
+
+.second-heading1{
+    font-style: italic;
+}
+
+.second-heading2{
+    text-decoration: underline;
+}
+
+.second-heading3{
+    text-decoration: line-through;
+}
+
+/* Thuoc tinh chung */
+.second-heading1, .second-heading2, .second-heading3{
+    color: orange;
+}
+
+
+
+.title{
+    color:pink;
+}
+
+
+/* > de chi ra con truc tiep */
+.box > .title{
+    color: red;
+}
+
+
+/* Hai lop lien ke thi tac dong lien lop thu hai */
+.title1 + .title1{
+    color: blueviolet;
+}
+
+
+
+/* Hai lop dung truoc va sau, khong bat buoc lien ke mien la giong ten khai bao */
+.title2 ~ .title2{
+    color: yellow;
+}
+
+.box1 .title3{
+    color: burlywood;
+}

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New</title>
+    <meta charset="utf-8" />
+    <style>
+      /**
+* Mở tab TRÌNH DUYỆT và thử thay đổi
+* giá trị font-size ở đây để khám phá bạn nhé.
+*
+* Nếu bạn thắc mắc về con số 62.5% thì nãy đọc
+* giải thích bên tab NỘI DUNG nhé.
+*/
+      html {
+        /*Mac dinh 100% la 16px
+                            10px
+         10*100/16 -> 62.5%                      
+        
+        */
+
+        /*
+        Tai sao su dung % thay vi px
+            Do px la don vi co dinh, tuong ung voi so px hien thi tren man hinh
+            Phu thuoc do phan giai thiet bi
+            Khi nguoi dung thay doi kich phong chu thi phan tram se thay doi theo con px thi co dinh
+        */
+
+        font-size: 62.5%;
+      }
+
+      #heading {
+        /* rem phu thuoc vao the html */
+        font-size: 2rem;
+      }
+
+      .sub-heading {
+        font-size: 1.6rem;
+      }
+      
+    
+      
+
+      .text,
+      ol li {
+        font-size: 1.4rem;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">
+      Tại sao nên thêm rel="noopener" khi sử dụng target="_blank"?
+    </h1>
+    <p class="text">
+      Như chúng ta đã biết, sử dụng target="_blank" cho thẻ a thì khi người dùng
+      click vào liên kết trình duyệt sẽ mở trên một tab mới, thường là do liên
+      kết trong thẻ a dẫn tới một website khác và chúng ta không muốn người dùng
+      rời khỏi website của mình.
+    </p>
+
+    <h2 class="sub-heading">Vấn đề là gì?</h2>
+    <p class="text">Với cách làm trên có 2 vấn đề về bảo mật và hiệu suất:</p>
+
+    <ol>
+      <li>
+        Tại trang đích có thể sử dụng window.opener để kiểm soát được cửa sổ
+        trang gốc của chúng ta, ví dụ chạy window.opener.location.href =
+        'https://fullstack.edu.vn/' là có thể chuyển hướng cửa sổ gốc tới
+        https://fullstack.edu.vn/. Hãy tưởng tượng bạn bị chuyển tới một URL có
+        nội dung “độc hại” như 18+ (khi ngồi cạnh người yêu), hay các trang giả
+        mạo để đánh cắp tài khoản ngân hàng, thông tin cá nhân, v.v…
+      </li>
+      <li>
+        Trang đích chạy cùng tiến trình xử lý Javascript với trang gốc, nếu
+        trang đích sử dụng nhiều logic “nặng” hoặc tối ưu chưa tốt về mặt hiệu
+        năng có thể làm ảnh hưởng tới trang web của bạn đang được mở tại cửa sổ
+        gốc.
+      </li>
+    </ol>
+
+    <h2 class="sub-heading">Khắc phục thế nào?</h2>
+    <p class="text">
+      Để khắc phục vấn đề trên, bạn hãy thêm rel="noopener" vào toàn bộ các thẻ
+      a có target="_blank" nhé.
+    </p>
+    <p class="text">
+      Tham khảo:
+      <a href="https://web.dev/external-anchors-use-rel-noopener"
+        >https://web.dev/external-anchors-use-rel-noopener</a
+      >
+    </p>
+  </body>
+</html>

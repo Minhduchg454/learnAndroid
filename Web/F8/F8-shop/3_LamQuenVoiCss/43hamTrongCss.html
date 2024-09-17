@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New</title>
+    <meta charset="utf-8" />
+    <style>
+        *{
+            margin: 0;
+        }
+
+        .html{
+            font-size: 100%;
+        }
+        h1{
+            font-size: 1.5rem;
+        }
+        li{
+            font-size: 1rem;
+        }
+
+        /* rgb */
+        .box{
+            background-color: rgb(39, 196, 138);
+            /* Phu thuoc bao the cha truc tiep: the body voi width la  100% chieu ngang*/
+            width: 100%; 
+            /* Do body khong co chieu cao co dinh nen su dung phan tram khong co tac dinh */
+            height: 10vh;
+        }
+
+        /* calc: tinh toan */
+        .box1{
+            background-color: blue;
+            /* Phu thuoc bao the cha truc tiep: the body voi width la  100% chieu ngang*/
+            width: calc(50% + 20px); 
+            /* Do body khong co chieu cao co dinh nen su dung phan tram khong co tac dinh */
+            height: calc(120px + 20px*2);
+        }
+
+
+        .box2{
+            /* alpha la gia tri trong suot
+                0- hoan toan trong suot
+                1- khong trong suot, thay duoc mau goc
+            
+            */
+            background-color: rgba(5, 5, 5,0.5);
+            width: 75%;
+            height: 30px;
+        }
+
+        /* Su dung lop gia 
+            Dua lien ket vao noi dung, khi thay doi duong dan thi lien ket thay doi theo
+        
+        */
+        .box::after{
+            content: attr(data-title);
+        }
+
+        a::after{
+            /* Dat noi dung trong dau ngoac */
+            content: "(" attr(href) ")";
+        }
+
+    </style>
+    
+  </head>
+  <body>
+
+    <div class="box" data-title="Day la box"></div>
+    
+    <div class="box1"></div>
+
+    <div class="box2"></div>
+
+    <a href="https://www.youtube.com/watch?v=OPz7Uz20XNQ">Hoc lap trinh</a>
+
+    <h1>CSS functions</h1>
+    <ul>
+        <li>var()</li>
+        <li>linear-gradien()</li>
+        <li>rgba()</li>
+        <li>rgb()</li>
+        <li>calc()</li>
+        <li>attr()</li>
+    </ul>
+    
+  </body>
+</html>

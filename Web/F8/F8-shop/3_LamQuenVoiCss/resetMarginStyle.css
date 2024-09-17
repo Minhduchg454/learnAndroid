@@ -1,0 +1,32 @@
+* {
+    /* Comment/uncomment để xem thay đổi trên tab TRÌNH DUYỆT 
+        p, h1-h6 cung co margin mac dinh
+    */
+    margin: 0; /*Loai bo margin mac dinh, mac dinh body la 8*/
+    padding: 0; /*Loai bo padding mac dinh */
+
+}
+
+.box {
+    height: 50px;
+}
+
+.box1 {
+    width: 25%;
+    background-color: green;
+}
+
+.box2 {
+    width: 50%;
+    background-color: violet;
+}
+
+.box3 {
+    width: 75%;
+    background-color: brown;
+}
+
+.box4 {
+    width: 100%;
+    background-color: orange;
+}

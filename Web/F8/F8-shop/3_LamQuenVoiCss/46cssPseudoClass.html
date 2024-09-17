@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New</title>
+    <meta charset="utf-8" />
+    <style>
+        .box{
+            width: 100%;
+            height: 120px;
+            background-color: pink;
+        }
+
+        /* hover: thay doi khi di chuyen, re chuot den doi tuong */
+        .box:hover{
+            background-color: deeppink;
+        }
+
+        h1:hover{
+            color: red;
+        }
+
+
+        .box1{
+            width: 100%;
+            height: 120px;
+            background-color: rgb(112, 102, 240);
+        }
+
+        /* active: kich hoat khi click vao doi tuong */
+        .box1:active{
+            background-color: darkblue;
+        }
+
+        /* Lay dua con dau tien va cuoi cung 
+            ung dung: xoa bo margin trong menu danh sach, xoa bo khoang trang ơ hai dau
+        
+        */
+        li:first-child{
+            color: red;
+        }
+
+        li:last-child{
+            color: aqua;
+        }
+
+
+    </style>
+    
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box1"></div>
+    <h1>CSS pseudo-classes</h1>
+    <p>Lớp giả</p>
+    <ul>
+        <!-- tap hop the li la con cua the ul -->
+        <li>:root (tham chieu toi chinh phan tu goc cua cap the html)</li>
+        <li>:hover (Thay doi css khi di chuyen vao doi tuong)</li>
+        <li>:active (Thay doi khi click vao doi tuong)</li>
+        <li>:first-child (select dua con dau tien)</li>
+        <li>:last-child (select dua con cuoi cung)</li>
+    </ul>
+    
+  </body>
+</html>

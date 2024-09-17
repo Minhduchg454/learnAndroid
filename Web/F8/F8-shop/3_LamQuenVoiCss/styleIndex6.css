@@ -1,0 +1,21 @@
+
+/* Bien toan cuc */
+:root{
+    --text-color: violet;
+}
+
+
+
+h1{
+    /* Bien cuc bo */
+    --text-color: green;
+    color: var(--text-color);
+}
+
+h2{
+    color: var(--text-color);
+}
+
+h3{
+    color: var(--text-color);
+}

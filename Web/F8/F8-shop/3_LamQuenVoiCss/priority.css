@@ -1,0 +1,23 @@
+h1{
+    color: red;
+}
+
+/* Do uu tien thap nhat universal selector */
+*{
+    color: black;
+}
+
+
+/*Do uu tien thap nhat tuong tu nhu universal inherited */
+html{
+    color: blueviolet !important;
+}
+
+/* them !important la do uu tien cao nhat, hon ca inline
+    neu muon inline cao hon thi phai them vao inline inportant
+    khi tat ca la important thi xet diem
+
+*/
+li {
+    color:blueviolet !important;
+}

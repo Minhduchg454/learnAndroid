@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CssUnit</title>
+    <meta charset="utf-8" />
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+      }
+
+
+      /* 
+
+        Gia tri tuong doi: thay doi kich thuoc khi doi tuong phu thuoc thay doi
+        
+        %
+        Can co diem phu thuoc de lam moc
+        Dat theo ti le % cua the ma no phu thuoc, mac dinh la the cha truc tiep cua no
+          + Vi vay the cha phai co width va height thi the con moi co tac dung
+        Dang phu thuoc vao the body, the body chiem toan bo man hinh
+        Vi vay bang 50% chieu ngang mah hinh
+      */
+
+      .boxPercent {
+        width: 50%;
+        height: 100px;
+        background-color: blue;
+      }
+
+      h1{
+        font-size: 30px;
+        text-decoration: underline;
+        color: aqua;
+      }
+
+      /* rem phu thuoc vao html 
+        Thuong su dung rem, neu rem la 100% thi mac dinh fontsize 16px
+      
+      */
+      html{
+        font-size: 100%;
+      }
+
+      h2{
+        
+        /* Neu dinh nghia html fontsize = 40px, thi 1 rem = 40px, 2 rem bang 80px */
+        font-size: 1rem;
+        text-decoration: underline;
+        color: green;
+      }
+
+
+      /* em phu thuoc vao the gan nhat chua no ma co fontsize 
+        b1: the div chua no, tim div co fontsize hay khong, 
+        b2: div khong co fontsze, qua the body chua no
+        b3: the body khong co fontsize, nhay qua the html co fontsize
+
+        Gia su div co fontsize =40 px vay thi 1 em bang 40px
+
+      */
+      h3{
+        font-size: 2em;
+        text-decoration: underline;
+        color: blue;
+      }
+
+      /* vw - width, vh - height */
+      /* v - viewport 
+      
+      
+      */
+
+      .box2{
+        /*1vw tuong duong 1% chieu ngang cua trinh duyet, khong phu thuoc vao the chua no */
+        width: 50vw;
+        /* 1vh tuong dong 1% chieu cao cua trinh duyet */
+        height: 10vh;
+        background-color: cadetblue;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="boxPercent"></div>
+
+    <div>
+      
+      <h1>CSS units</h1>  
+
+      <!-- 1px thi tuy thuoc vao do phan giai man hinh, do phan giai cang cao thi px cang lon va nguoc lai -->
+        <!-- Kich thuoc co dinh, khong thay doi theo trinh duyet hay kich thuoc man hinh -->
+      
+      <!-- <h2>Absolute units? (Đơn vị tuyệt đối)</h2>
+      <ul>
+        <li>px</li> 
+        <li>pt</li>
+        <li>cm</li>
+        <li>mm</li>
+        <li>inch</li>
+        <li>pc</li>
+      </ul> -->
+
+      <!-- <h2>Relative units? (Đơn vị tương đối)</h2>
+      <ul>
+        <li>%</li>
+        <li>rem</li>
+        <li>em</li>
+        <li>vw</li>
+        <li>vh</li>
+        <li>vmin</li>
+        <li>vmax</li>
+        <li>ex</li>
+        <li>ch</li>
+      </ul> -->
+    </div>
+
+    <h2>CSS units (rem)</h2>  
+
+    <!-- em le thuoc vao font size chua no -->
+    <div style="font-size: 20px;">
+        <h3>CSS units (em)</h3>  
+    </div>
+   
+    <div class="box2">
+      <p>View port vw vh ddadff</p>
+    </div>    
+
+
+  </body>
+</html>
