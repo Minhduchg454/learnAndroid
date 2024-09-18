@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New</title>
+    <meta charset="utf-8" />
+    <style>
+      *{
+        margin: 0;
+      }
+
+      .box{
+        width: 60px;
+        height: 60px;
+        color: white;
+
+        /* 
+        flex: Thiet lap phan tu box thanh mot hop flex box de dang can chinh va sap xep theo chieu ngang va chieu doc
+        align: can giua cac phan tu con theo chieu doc, truc cheo cua flexbox
+        justify: can giua cac phan tu con theo chieu ngang
+        */
+
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+      }
+
+    /* outline
+      Ghi de len doi tuong xung quanh
+      */
+      .box1{
+        background-color: #333;
+        outline-color: green;
+        outline-width: 2px;
+        outline-style: dotted;
+        outline-offset: 2px; /*Khoang cach tu bien*/
+      }
+
+
+  
+
+      .box2{
+        background-color: orange;
+      }
+
+
+      /* 
+      Border va padding cung bao khoi doi tuong, deu lam tang kich thuoc element ma no tac dong
+      Border ben ngoai padding
+      La vien bao quanh doi tuong
+
+      
+      */
+      .box3{
+        background-color: firebrick;
+        padding: 10px;
+        
+
+        /* border-style: solid;
+        border-color: #333; */
+
+            /* bon huong la 10px */
+        /* border-width: 10px; */
+
+        /* Canh tung huong 
+            Neu khong de gia tri thi mac dinh moi huong la 2px
+        */
+        /* border-top-width: 10px;
+        border-bottom-width: 12px;
+        border-left-width:14px ;
+        border-right-width:16px ; */
+
+        /* Viet ngan border */
+        border: 10px solid #333;
+
+        /* Viet ngan mot huong*/
+        
+
+      }
+
+
+      
+    </style>
+  </head>
+  <body>
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+    
+  </body>
+</html>

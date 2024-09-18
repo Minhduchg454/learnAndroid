@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New</title>
+    <meta charset="utf-8" />
+    <style>
+        html{
+            font-size: 100%;
+        }
+
+        .box{
+            width: 100%;
+            height: 150px;
+            background-color: blueviolet;
+        }
+
+
+        /* Tao doi tuong ma khong can them vao trong the html 
+            De xem hoat dong: mo trang web, nhan f12, before va after luon o hai dau khoi no dat
+        */
+        .box::before{
+            content: "";
+            /* 
+            mac dinh cac class co dang khoi
+            con thuoc tinh gia thi phai khai bao de co dang khoi 
+            */
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+        }
+
+        .box::after{
+            content: "";
+            font-size: 0.5rem;
+            /* 
+                căn giữa theo chiều dọc line height bằng chiều cao ô chứa
+                căn giữa theo chiều ngang text-algin
+            */
+            line-height: 50px; 
+            text-align: center;
+
+            /* 
+            mac dinh cac class co dang khoi
+            con thuoc tinh gia thi phai khai bao de co dang khoi 
+            */
+            display: block;
+            width: 50px;
+            height: 50px;
+            background-color: white;
+        }
+
+
+        /* Cho chu dau tien co kich thuoc lon nhat */
+        h1::first-letter{
+            font-size: 50px;
+            color: red;
+        }
+
+        /* Css cho dong thu dong dau tien */
+        h2::first-line{
+            font-size: 50px;
+            color: blanchedalmond;
+        }
+
+        /* Su lua chon, 
+            khi chon (Chon doi tuong bang chuot phai) thi thay doi theo CSS da thiet lap */
+        h3::selection{
+            background-color: red;
+            color: white;
+        }
+
+
+        
+    </style>
+  </head>
+  <body>
+    <div class="box">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+    
+    <h1>CSS pseudo-elements</h1>
+
+    <!-- Ki hieu <br> dung de xuong dong -->
+    <h2>Css first line
+        <br>
+        Dòng thứ 2
+    </hư>
+
+    <h3>Css selection
+        <br>
+        Dòng thứ 3
+    </hư>
+
+
+
+    <ul>
+        <li>::before (truoc)</li>
+        <li>::after (sau)</li>
+        <li>::first-letter (ki tu dau tien)</li>
+        <li>::first-line</li>
+        <li>::selection</li>
+    </ul>
+  </body>
+</html>

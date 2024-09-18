@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New</title>
+    <meta charset="utf-8" />
+    <style>
+      *{
+        margin: 0;
+      }
+
+      .box{
+        width: 60px;
+        height: 60px;
+        color: white;
+
+        /* 
+        flex: Thiet lap phan tu box thanh mot hop flex box de dang can chinh va sap xep theo chieu ngang va chieu doc
+        align: can giua cac phan tu con theo chieu doc, truc cheo cua flexbox
+        justify: can giua cac phan tu con theo chieu ngang
+        */
+
+        display: flex; 
+        align-items: center;
+        justify-content: center;
+      }
+
+
+      .box1{
+        background-color: #333;
+      }
+
+      .box2{
+        background-color: orange;
+      }
+
+
+      /* De xem padding:
+        +Mo trinh duyet, f12, click chon doi tuong, chon tab Computed
+
+        padding: la khoang dem cua doi tuong, khoang cach cua no xung quan cac phan tu khac
+         +Day ca background luon
+
+      */
+      .box3{
+        background-color: firebrick;
+
+        /* Ap dung tat cac cac huong deu cung nhau */
+        /* padding: 10px; */
+
+
+        /* Ap dung cho top-bottom =10px va left-right 12px */
+        /* padding: 10px 12px; */
+
+        /* 3 thuoc tinh
+          tren 10 px
+          trai phai: 20 px
+          duoi 8px
+        */
+        /* padding: 10px 12px 8px; */
+
+
+        /* 4 gia tri theo chieu kim dong ho
+          tren: 10px
+          phai: 12px
+          duoi: 8px
+          trai: 4px
+
+        */
+        padding: 10px 12px 8px 4px;
+
+
+        /* padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box box1">Box 1</div>
+    <div class="box box2">Box 2</div>
+    <div class="box box3">Box 3</div>
+    
+  </body>
+</html>
